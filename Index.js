@@ -2,6 +2,8 @@
 //--- Express module
 const express = require('express');
 // ---Initialise express server
+require('dotenv').config()
+
 const app = express();
 // -- create port variable
 const PORT = 3000 || process.env.PORT;
@@ -13,12 +15,12 @@ const path = require('path');
 let morgan = require('morgan');
 let bcrypt = require('bcryptjs');
 let ejs = require('ejs');
-const db = require('./database')
+const db = require('./database');
 
 //import routes
-const homeRouter = require("./routes/home.js")
-const usersRouter = require("./routes/users.js")
-const errorRouter = require("./routes/error.js")
+const homeRouter = require('./routes/home.js');
+const usersRouter = require('./routes/users.js');
+const errorRouter = require('./routes/error.js');
 
 
 //3.
@@ -35,7 +37,7 @@ app.use(morgan('dev'));
 
 //ejs config
 app.set('view engine', 'ejs') // sets ejs as view engine
-app.set('views', './views') // sets 'views' folder as teh folder for grabbing templates when res.rendering
+// app.set('views', './views') // sets 'views' folder as teh folder for grabbing templates when res.rendering
 
 
 //4.

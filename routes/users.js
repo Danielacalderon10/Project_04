@@ -7,7 +7,7 @@ const router = express.Router()
 // const { protectedRoute } = require('../middleware/protected');
 
 // GET all users
-router.get('/', (req, res) => {
+router.get('/users', (req, res) => {
    // pg-promise
    db.any('SELECT * FROM users')
      .then((users) => {

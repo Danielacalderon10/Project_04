@@ -5,7 +5,7 @@
   "main": "Index.js",
   "scripts": {
     "start": "node Index.js",
-    "dev": "nodemon Index.js",
+    "dev": "nodemon -r dotenv/config Index.js",
     "create_db": "psql -U postgres -f sql/create_db.sql",
     "create_tables": "psql -U postgres -d schedules -f sql/create_tables.sql",
     "seed_tables": "psql -U postgres -d schedules -f sql/seed_tables.sql",

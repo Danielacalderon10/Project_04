@@ -1,17 +1,13 @@
 
 //initialise and conect
-const pgp = require('pg-promise')()
+const pgp = require('pg-promise')();
 
-const username = 'postgres'
-const password = 'Dany.10'
-const host = 'localhost'
-const port = '5432'
-const database = 'project4'
+const { DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_DATABASE } = process.env;
 
-const connectionString = `postgres://${username}:${password}@${host}:${port}/${database}`
+const connectionString = `postgres://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`;
 
 // create db instance
-const db = pgp(connectionString)
+const db = pgp(connectionString);
 
 module.exports = db
 
