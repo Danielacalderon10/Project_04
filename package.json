@@ -1,7 +1,7 @@
 {
-  "name": "project3",
+  "name": "project4",
   "version": "1.0.0",
-  "description": "... # Project 3",
+  "description": "... # Project 4",
   "main": "Index.js",
   "scripts": {
     "start": "node Index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Danielacalderon10/project3.git"
+    "url": "git+https://github.com/Danielacalderon10/Project_04test.git"
   },
   "author": "daniela",
   "license": "ISC",
