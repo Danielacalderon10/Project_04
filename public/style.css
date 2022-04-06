@@ -122,8 +122,36 @@ background-color: #C6CBD0;
 border: none;
 color: #F5F5F5;
 
-
 }
+
+.day{
+  width: 100%;
+  padding: 2%;
+  margin: 2%;
+  background-color: #C6CBD0; 
+  border: none;
+  color: #F5F5F5;
+  
+  }
+
+  .start_at{
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #C6CBD0; 
+    border: none;
+    color: #F5F5F5;
+    
+    }
+    .end_at{
+      width: 100%;
+      padding: 2%;
+      margin: 2%;
+      background-color: #C6CBD0; 
+      border: none;
+      color: #F5F5F5;
+      
+      }
 
 .submit{
 background-color: #6D7B8A; 
