@@ -33,9 +33,10 @@ router.get('/', (req, res) => {
  // GET specific users
  router.get('/:user_id', (req, res) => {
    const index = req.params.user_id;
-   db.oneOrNone('SELECT * FROM users WHERE id = $1', [index])
+   db.oneOrNone('SELECT * FROM users WHERE user_id = $1', [index])
      // const user = users[index];
      .then((specificUser) => {
+       console.log(specificUser)
        // fail
        if (!specificUser) {
          res.render('pages/error', {
