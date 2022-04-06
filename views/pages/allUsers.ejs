@@ -36,8 +36,8 @@
             <!-- LOOP THROUGH ALL USERS -->
             <% for(let i = 0; i < users.length; i++) { %>
                <tr> 
-                  <th><a href= "/users/<%=[i]%>/schedules"> <%= [i] %></a></td>
-                     <td><a href= "/users/<%=[i]%>"> <%= users[i].firstname %></a></td>
+                  <th><a href= "/users/<%=[i]%>/schedules"> <%= users[i].user_id %></a></td>
+                     <td><a href= "/users/<%=[i+1]%>"> <%= users[i].firstname %></a></td>
                   <td><%= users[i].lastname %></td>
                   <td><%= users[i].email %></td>
                </tr>

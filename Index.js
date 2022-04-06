@@ -1,5 +1,6 @@
 // 1.
 //--- Express module
+require('dotenv').config();
 const express = require('express');
 // ---Initialise express server
 const app = express();
@@ -42,7 +43,6 @@ app.set('views', './views') // sets 'views' folder as teh folder for grabbing te
 //--- Routes
 app.use('/', homeRouter)
 app.use('/users', usersRouter)
-app.use('/addnewuser', usersRouter)
 app.use('*', errorRouter)
 
 
