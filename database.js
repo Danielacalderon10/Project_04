@@ -6,7 +6,7 @@ const username = 'postgres'
 const password = 'Dany.10'
 const host = 'localhost'
 const port = '5432'
-const database = 'schedules'
+const database = 'project4'
 
 const connectionString = `postgres://${username}:${password}@${host}:${port}/${database}`
 
